@@ -4,5 +4,7 @@ sequenceDiagram
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
     activate server
-    server-->>browser: {"message":"note created"}
+    server-->>browser: {content: "new note!", date: "2024-04-15T20:08:18.001Z"}
     deactivate server
+
+//server does not send another GET request to browser to reload page, so there are no more requests
