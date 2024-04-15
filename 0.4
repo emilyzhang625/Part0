@@ -7,7 +7,7 @@ sequenceDiagram
     server-->>browser: GET /exampleapp/notes
     deactivate server
 
-    //server asks browser to perform new GET request 
+//server asks browser to perform new GET request to reload page
     
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
